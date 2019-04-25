@@ -35,7 +35,7 @@ function getSignedNumber(number, bitLength) {
 server.on('message', (msg, rinfo) => {
   // console.log(`server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
   // console.log(`server got message ${msg.length} ${msg instanceof Buffer} from ${rinfo.address}:${rinfo.port}`);
-  console.log(msg);
+  // console.log(msg);
 
   if (msg instanceof Buffer && msg.length === 29 && msg.readUInt8(0) === 209) {
     let message = {
@@ -146,13 +146,6 @@ server.on('message', (msg, rinfo) => {
 
     console.log(message);
   }
-
-  // TRANSLATION
-  // let osc = new OSC();
-  // let message = new OSC.Message('/translation/x', tf.translation.x, 'x');
-  // osc.send(message);
-  // let binary = message.pack()
-  // client.send(new Buffer(binary), 0, binary.byteLength, 4444, '192.168.77.18');
 });
 
 server.on('listening', () => {
