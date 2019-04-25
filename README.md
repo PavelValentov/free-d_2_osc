@@ -1,6 +1,9 @@
 # Free-d tracking to OSC server
 
-**Install:**
+**The application gets free-d tracking packets, dispatches them and sends to OSC server**
+
+
+**How to install:**
 
 `git clone https://github.com/PavelValentov/free-d_2_osc.git`
 
@@ -8,7 +11,7 @@
 
 `npm install`
 
-**Start:**
+**How to start:**
 
 `npm start`
 
